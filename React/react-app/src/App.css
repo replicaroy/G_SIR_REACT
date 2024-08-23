@@ -6,7 +6,7 @@
 .main_container{
   display: grid;
   /* border: 1px solid red; */
-  text-align: center;
+  /* text-align: center; */
   height: 98vh;
   /* font-size: 20px; */
   grid-template-columns: 300px auto auto;
@@ -31,6 +31,7 @@ main{
   grid-area: main;
   /* border: 1px solid red; */
   background-color: #d6d1d1;
+  grid-template-columns: repeat(4,1fr);
 }
 footer{
   grid-area: footer;

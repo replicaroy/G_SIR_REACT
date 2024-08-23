@@ -9,13 +9,12 @@ const DisplayObjects = ({dataObj = {}, title=''}) => {
         {Object.keys(dataObj).map(attr=> {
             return(
                 <div key={attr}>
-                    <span>{attr}</span>
+                    <span>{attr}</span> :
                     <span>{dataObj[attr]}</span>
                 </div>
             )
         })}
-        'hello'
-      
+            
     </div>
   )
 }
