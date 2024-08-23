@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main_container{
+    display: grid;
+    /* border: 1px solid red; */
+    text-align: center;
+    height: 98vh;
+    /* font-size: 20px; */
+    grid-template-columns: 300px auto auto;
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:"nav nav nav"
+                    "aside main main"
+                    "footer footer footer";
+}
+nav{
+    width: 100%;
+    grid-area:nav;
+    /* border: 1px solid red; */
+    background-color: #000000d8;
+    color: white;
+}
+.dashbord_div{
+    width: 100%;
+}
+.dashbord_div img{
+    width: 100%;
+}
+aside{
+    grid-area: aside;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border: 1px solid red; */
+}
+main{
+    grid-area: main;
+    /* border: 1px solid red; */
+    background-color: #d6d1d1;
+}
+footer{
+    grid-area: footer;
+    /* border: 1px solid red; */
+    background-color: #000000d8;
+    color: white;
+}
+.dashbord_buttons,.dash_btn_div button{
+    width: 98%;
+    padding: 5px;
+    margin-top: 5px;
+    background: #000000d8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.dash_btn_div{
+    /* border: 1px solid red; */
+    width: 90%;
+    padding: 3px;
+    display: flex;
+    gap: 25px;
+    margin: auto;
+}
+.dash_btn_div button{
+padding: 45px;
+font-size: x-large;
+transition: all 1s ease-in-out;
+}
+.dash_btn_div button:hover{
+    transform: scale(1.05);
+    }
+ul{
+    list-style: none;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    /* border: 2px solid rgb(209, 27, 27); */
+    padding: 10px;
+}
+.card_container img{
+    width: 85%;
+    height: 280px;
+    border-radius: 20px 40px;
+    transition: all .5s ease-in-out;
+}
+.card_container img:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+.card_container button{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 30%;
+    margin-top: 10px;
+color: white;
+background-color: rgba(34, 33, 33, 0.801);
+border: none;
+transition: all .5s ease-in-out;
+}
+.card_container button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+background-color: rgb(16, 110, 12);
+
+}
+.card_container{
+    /* border: 3px solid red; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px 40px;
+    /* background-color: rgba(172, 175, 156, 0.185); */
+    /* border: 1px solid gray; */
+    transition: all .5s ease-in-out;
+}
+.card_container:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(39, 36, 36, 0.795);
+}
+p{
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+}
+.card_container:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.profile_div{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    margin: auto;
+}
+.div_profile{
+    width: 100%;
+    margin: auto;
+}
+.div_profile img{
+    width: 20%;
+    border-radius: 50%;
+}
+.profile_div1{
+    /* border: 1px solid red; */
+    width: 100%;
+    /* font-size: xx-large; */
+}
+
+.nameDiv{
+    /* border: 1px solid red; */
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+    background-color: #bccfa3;
+}
+.contactDiv{
+    padding: 20px;
+}
+.nameDiv form{
+    /* border: 1px solid red; */
+    text-align: left;
+    display: grid;
+    font-size: 20px;
+}
+.nameDiv form input,.nameDiv form textarea{
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+}
+.nameDiv form textarea{
+    height: 50px;
+}
+label{
+    margin-top: 10px;
+}
+#btn{
+    margin: 15px auto;
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #5e9648;
+    font-size: 20px;
+}

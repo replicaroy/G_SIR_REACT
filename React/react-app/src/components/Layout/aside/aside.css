@@ -1,0 +1,30 @@
+.btn_div{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap:.7rem;
+    padding: .68rem;
+  }
+  .btn{
+    width: 80%;
+    height: 30px;
+    /* padding: 1rem; */
+    background-color: transparent;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: auto;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+  }
+  .btn:hover{
+    background-color: #b9bcc0e0;
+  }
+  h2{ 
+    margin-top: 20px;
+  }
+  
+
+
+
+  
